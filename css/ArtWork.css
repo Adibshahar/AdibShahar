@@ -1,0 +1,141 @@
+body{
+background-image: url(image.jpg); background-size: 100%; 100%;
+margin: 0;
+font-family: "century gothic";
+font-size: 15px;
+}
+
+.header{
+margin-top: 10px;
+margin-bottom: 0;
+margin-left: 10px;
+margin-right: 10px;
+border-radius: 5px 5px 0 0;
+background-color: #5c755e;
+height: 90px;
+}
+
+.title{
+font-size:350%;
+padding: 10px;
+text-align: center;
+color: #000;
+font-family: "century gothic";
+}
+
+.headerr{
+	color:gold;
+	font-size: 200%;
+	font-family:'Times New Roman', Times, serif;
+}
+
+.navbar ul{
+background-color: #000;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 0;
+margin-bottom: 0;
+padding: 5px 10px;
+text-align: center;
+list-style-type: none;
+}
+
+.navbar li{
+display: inline;
+}
+
+.navbar li a{
+margin: 0;
+text-decoration: none;
+font-family: arial;
+padding: 0px 130px;
+color: #fff;
+}
+
+.navbar li a:hover{
+color: #000;
+background-color: #5c755e;
+}
+
+.content {
+	background-image: url(background.jpg);
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	text-align: center;
+}
+
+.box {
+	border: 5px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	/*specify box width*/
+	flex-basis: 350px;
+	height: 50px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-align: center;
+	/*hide the extra text*/
+	overflow: hidden;
+	transition: ease 0.5s;
+	background-color: darkslategrey;
+}
+
+/*change box style on hover*/
+.content-container .box:hover {
+	padding-bottom: 350px;
+	color: gold;
+	background-color: transparent;
+}
+
+h1{
+font-size: 150%;
+}
+
+p{
+font-size: 100%;
+}
+
+.navbarr ul{
+background-color: #000;
+margin-left: 10px;
+margin-right: 10px;
+margin-top: 0;
+margin-bottom: 0;
+padding: 5px 10px;
+text-align: center;
+list-style-type: none;
+}
+
+.navbarr li{
+display: inline;
+}
+
+.navbarr li a{
+margin: 0;
+text-decoration: none;
+font-family: arial;
+padding: 0px 40px;
+color: #fff;
+}
+
+.navbarr li a:hover{
+color: #000;
+background-color: #5c755e;
+}
+
+
+.footer{
+background-color: #5c755e;
+margin-top: 0;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 10px;
+border-radius: 0 0 5px 5px;
+text-align: center;
+font-size: 80%;
+padding: 25px;
+}

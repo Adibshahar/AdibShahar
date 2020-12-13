@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CONTACT</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../AdibShahar/css/icon.png" />
+
+	<script type="text/javascript">
+
+		function checkboxCheck(theForm) {
+
+			if (theForm.Agreement.checked == false) {
+				alert('YOU MUST AGREE FOR THE TERMS AND CONDITIONS OF SENDING MESSAGE!');
+				return false;
+			}
+
+			else {
+				return true;
+			}
+		}
+
+		function submitForm() {
+			alert('YOUR MESSAGE HAS BEEN SENT!');
+			return true;
+		}
+
+        setTimeout(function () {
+            document.getElementById("my_audio").play();
+        }, 3000)
+
+	</script>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="../AdibShahar/css/ContactMe.css">
+
+<body>
+
+	<div class="header">
+		<div class="title">
+			<b><a href="index.html"><img src="../AdibShahar/css/ASLOGO1.png" alt="AS LOGO"></a></b>
+		</div>
+	</div>
+	<!--Navigation bar-->
+	<div class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Project.html">My Project</a></li>
+			<li><a href="ArtWork.html">Art Work</a></li>
+			<li><a href="">Contact Me!</a></li>
+		</ul>
+	</div>
+
+	<!--Content-->
+	<div class="content">
+
+		<br />
+
+		<div class="headerr">
+			<h1>REACH ME NOW!</h1>
+		</div>
+
+		<br />
+		<!--Fieldset of contact form-->
+		<fieldset style="color:gold">
+			<legend style="text-align:center">CONTACT FORM</legend>
+
+			<br />
+			<br />
+
+			<section class="content-container">
+
+				<div class="contact-form">
+					<form id="contact-form">
+						<input name="name" type="text" class="form-control" placeholder="Full Name" style="color:gold">
+						<br>
+						<input name="email" type="email" class="form-control" placeholder="Email" style="color:gold">
+						<br>
+						<input name="address" type="text" class="form-control" placeholder="Address" style="color:gold">
+						<br>
+						<textarea name="message" class="form-control" placeholder="Message" rows="4" style="color:gold"></textarea>
+						<br>
+					</form>
+
+					<form id="contact-form" onclick="return checkboxCheck(this);" onsubmit="return submitForm(this);">
+						<input type="checkbox" id="Agree1" name="Agreement" value="Agree">
+						<label for="Agree1" style="color:orangered"><b>My message has no element of violence and pornography</b></label><br>
+
+						<input name="submit" type="submit" class="form-control submit" value="SEND MESSAGE">
+					</form>
+				</div>
+
+			</section>
+			<!--Contact link hover button-->
+			<section id="contact">
+
+				<div class="contact_container">
+					<a href="https://twitter.com/ahmadadibb" target="_blank"><img src="css/twitter.png" alt="twitter"></a>
+					<a href="mailto:adibbshahar@gmail.com" target="_blank"><img src="css/gmail.png" alt="email"></a>
+					<a href="https://www.instagram.com/adibshahar/" target="_blank"><img src="css/instagram.png" alt="instagram"></a>
+				</div>
+
+			</section>
+			<br />
+		</fieldset>
+	</div>
+
+	<!--Navigation bar-->
+	<div class="navbarr">
+		<ul>
+			<li><a href="Feedback.html">Feedback and Recommendations</a></li>
+		</ul>
+	</div>
+
+	<!--Footer-->
+	<div class="footer">
+		&copy; 2020 Adib Shahar's Portfolio
+	</div>
+
+	<!--audio background-->
+	<audio src="../AdibShahar/css/audioback.mp3" id="my_audio" loop="loop"></audio>
+
+</body>
+</html>

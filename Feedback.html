@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>FEEDBACK</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../AdibShahar/css/icon.png" />
+
+	<script type="text/javascript">
+
+		/*JAVASCRIPT FEEDBACK*/
+		function Clear1() {
+
+			document.getElementById("myForm1").reset();
+
+			clearRadioGroup("optradio1");
+			clearRadioGroup("optradio2");
+			clearRadioGroup("optradio3");
+			clearRadioGroup("optradio4");
+			clearRadioGroup("optradio5");
+		}
+
+		function clearRadioGroup(GroupName) {
+			var ele = document.getElementsByName(GroupName);
+			for (var i = 0; i < ele.length; i++)
+				ele[i].checked = false;
+		}
+
+		function submitFeedBack() {
+			alert('A BIG THANKYOU FOR YOUR FEEDBACK ! ^_^');
+			return true;
+		}
+
+		/*JAVASCRIPT RECOMMENDATIONS*/
+
+		function submitRecommend() {
+			alert('A BIG THANKYOU FOR YOUR RECOMMENDATIONS, I HOPE YOU ENJOY TOWARD THIS WEBSITE ! ^_^');
+			return true;
+		}
+
+        setTimeout(function () {
+            document.getElementById("my_audio").play();
+        }, 3000)
+
+	</script>
+
+</head>
+
+<link rel="stylesheet" type="text/css" href="../AdibShahar/css/Feedback.css">
+
+<body>
+
+	<div class="header">
+		<div class="title">
+			<b><a href="index.html"><img src="../AdibShahar/css/ASLOGO1.png" alt="AS LOGO"></a></b>
+		</div>
+	</div>
+
+	<!--Navigation bar-->
+	<div class="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Project.html">My Project</a></li>
+			<li><a href="ArtWork.html">Art Work</a></li>
+			<li><a href="ContactMe.html">Contact Me!</a></li>
+		</ul>
+	</div>
+
+	<!--Content-->
+	<div class="content">
+
+		<br />
+
+		<div class="headerr">
+			<h1>FEEDBACK AND RECOMMENDATIONS</h1>
+		</div>
+
+		<br />
+		<!--Fieldset of feedback form-->
+		<fieldset style="color:gold">
+			<legend style="text-align:center">FEEDBACK FORM</legend>
+
+			<br />
+
+			<form class="form-style-9" id="myForm1">
+				<ul>
+					<li>
+						<input type="text" name="field1" class="field-style field-split align-left" placeholder="Full Name" style="color:gold" />
+						<input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" style="color:gold" />
+					</li>
+					<li>
+						<select class="field-style field-split align-left" id="State" style="color:gold">
+							<option value="volvo">SELECT STATE:</option>
+							<option value="saab">Selangor</option>
+							<option value="opel">Kuala Lumpur</option>
+							<option value="audi">Melaka</option>
+							<option value="audi">Negeri Sembilan</option>
+							<option value="audi">Johor</option>
+							<option value="audi">Pahang</option>
+							<option value="audi">Perak</option>
+							<option value="audi">Kedah</option>
+							<option value="audi">Perlis</option>
+							<option value="audi">Kelantan</option>
+							<option value="audi">Terengganu</option>
+							<option value="audi">Sabah</option>
+							<option value="audi">Sarawak</option>
+						</select>
+						<input type="text" name="field3" class="field-style field-split align-right" placeholder="Phone No." style="color:gold" />
+					</li>
+					<li>
+						<form class="field-split align-left">
+
+							<label>STATUS:</label>
+							<label class="radio-inline">
+								<input type="radio" id="student" name="optradio" checked>Student
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="govworker" name="optradio">Government Worker
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="nongovworker" name="optradio">Non-Government Worker
+							</label>
+							<label class="radio-inline">
+								<input type="radio" id="nonworker" name="optradio">Non-Worker
+							</label>
+						</form>
+					</li>
+
+					<li>
+						<hr />
+						<table border="0" cellspacing="0" width="1100" cellpadding="15" align="center">
+							<thead>
+								<tr>
+									<th align="center" colspan="5">QUESTION</th>
+									<th align="center">STRONGLY DISAGREE</th>
+									<th align="center">DISAGREE</th>
+									<th align="center">AGREE</th>
+									<th align="center">STRONGLY AGREE</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1.</td>
+									<td colspan="4">Are you excited when you entered this website?</td>
+									<td align="center">
+										<label><input type="radio" id='strdis' name="optradio1"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='dis' name="optradio1"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='agr' name="optradio1"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='stragr' name="optradio1"></label>
+									</td>
+								</tr>
+
+								<tr>
+									<td>2.</td>
+									<td colspan="4">Are you satisfied with all the user interface found in this website?</td>
+									<td align="center">
+										<label><input type="radio" id='strdis' name="optradio2"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='dis' name="optradio2"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='agr' name="optradio2"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='stragr' name="optradio2"></label>
+									</td>
+								</tr>
+
+								<tr>
+									<td>3.</td>
+									<td colspan="4">Would you like to stay in this website for a long time?</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio3"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio3"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio3"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio3"></label>
+									</td>
+								</tr>
+
+								<tr>
+									<td>4.</td>
+									<td colspan="4">Do you want to develop a website like me?</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio4"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio4"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio4"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio4"></label>
+									</td>
+								</tr>
+
+								<tr>
+									<td>5.</td>
+									<td colspan="4">Do you want to recommend this website to your other contacts?</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio5"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio5"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio5"></label>
+									</td>
+									<td align="center">
+										<label><input type="radio" id='regular' name="optradio5"></label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<hr />
+					</li>
+					<br />
+
+					<li style="text-align:center">
+						<input type="button" onclick="Clear1()" value="Reset" id="ResetAll" />
+						<input type="submit" value="Submit" onclick="return submitFeedBack()" />
+					</li>
+
+				</ul>
+			</form>
+
+			<br />
+		</fieldset>
+
+		<br />
+		<!--Fieldset of recommendations form-->
+		<fieldset style="color:gold">
+			<legend style="text-align:center">RECOMMENDATIONS</legend>
+
+			<br />
+
+			<table border="0" cellpadding="10" align="center" width="1100">
+
+				<tr>
+					<td>1.</td>
+					<td colspan="4">
+						Do you have any knowledge of programming language in developing a website?
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="q11" name="q11">
+						<label for="q11">CSS</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q12" name="q12">
+						<label for="q12">HTML</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q13" name="q13">
+						<label for="q13">JavaScript</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q14" name="q14">
+						<label for="q14">No One</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>2.</td>
+					<td colspan="4">
+						If you are a website developer, what are the purposes of the website that you have developed?
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="q21" name="q21">
+						<label for="q21"> Business</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q22" name="q22">
+						<label for="q22"> Portfolio</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q23" name="q23">
+						<label for="q23"> Blogs</label>
+					</td>
+					<td>
+						<input type="checkbox" id="q24" name="q24">
+						<label for="q24"> Others</label>
+					</td>
+				</tr>
+
+				<tr>
+					<td>3.</td>
+					<td colspan="4">
+						What is your favourite courses if you are not interested in programming languages?
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" id="q31" name="q31">
+						<label for="q31"> Sports</label><br>
+					</td>
+					<td>
+						<input type="checkbox" id="q32" name="q32">
+						<label for="q32"> Music</label><br>
+					</td>
+					<td>
+						<input type="checkbox" id="q33" name="q33">
+						<label for="q34"> Accounting</label><br>
+					</td>
+					<td>
+						<input type="checkbox" id="q34" name="q34">
+						<label for="q34"> Others</label><br>
+					</td>
+				</tr>
+
+			</table>
+
+			<br />
+			<hr />
+			<br />
+
+			<form class="form-style-9">
+				<ul>
+					<li>
+						<input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" style="color:gold" />
+						<input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" style="color:gold" />
+					</li>
+					<li>
+						<select class="field-style field-split align-left" id="age" style="color:gold">
+							<option value="volvo">SELECT AGE:</option>
+							<option value="saab">0-20 Years old</option>
+							<option value="opel">21-40 Years old</option>
+							<option value="audi">41-60 Years old</option>
+							<option value="audi">61-80 Years old</option>
+							<option value="audi">81-100 Years old</option>
+						</select>
+					</li>
+					<li>
+						<textarea name="field3" class="field-style" placeholder="Message" style="color:gold"></textarea>
+					</li>
+
+				</ul>
+
+			</form>
+
+			<p>YOU ALSO CAN INCLUDE ANY HTML FILE AS RECOMMENDATION TO IMPROVE THIS WEBSITE:</p>
+
+			<form>
+				<input type="file" id="fileUpload">
+			</form>
+
+			<hr />
+
+			<br />
+
+			<form class="form-style-9">
+				<ul>
+					<li style="text-align:center">
+						<input type="submit" value="Submit" onclick="return submitRecommend()" />
+					</li>
+				</ul>
+			</form>
+
+		</fieldset>
+	</div>
+
+	<!--Navigation bar-->
+	<div class="navbarr">
+		<ul>
+			<li><a href="">Feedback and Recommendations</a></li>
+		</ul>
+
+	</div>
+
+	<!--Footer-->
+	<div class="footer">
+		&copy; 2020 Adib Shahar's Portfolio
+	</div>
+
+	<!--audio background-->
+	<audio src="../AdibShahar/css/audioback.mp3" id="my_audio" loop="loop"></audio>
+
+
+</body>
+</html>
